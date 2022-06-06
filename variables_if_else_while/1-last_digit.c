@@ -20,7 +20,7 @@ int main(void)
 	}
 	else if (n % 10 > 5)
 	{
-		printf("and is grater than 5/n");
+		printf("and is grater than 5\n");
 	}
 	else if (n % 10 < 6 && n % 10 != 0)
 	{
