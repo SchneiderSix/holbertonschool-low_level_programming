@@ -7,10 +7,11 @@
 int main(void)
 {
 
-/** holy ravioli
+/*
+ * holy ravioli
  * wow
  * nice
- */
+*/
 
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
