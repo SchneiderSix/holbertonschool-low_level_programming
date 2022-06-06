@@ -1,5 +1,7 @@
 /**
  * main - Rip god
+ * puts - print things
+ * return - print zero
 */
 
 #include <stdio.h>
