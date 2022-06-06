@@ -1,5 +1,6 @@
 /*
  * print the thing in the puts with a new line and print zero
+ * main - Rip god
 */
 
 #include <stdio.h>
