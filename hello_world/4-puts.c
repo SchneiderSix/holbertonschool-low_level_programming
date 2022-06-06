@@ -1,5 +1,4 @@
-/*
- * print the thing in the puts with a new line and print zero
+/**
  * main - Rip god
 */
 
@@ -8,7 +7,7 @@
 int main(void)
 {
 
-/*
+/**
  * main - Please god
  * holy ravioli
  * wow
