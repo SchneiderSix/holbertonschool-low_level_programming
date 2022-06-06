@@ -2,8 +2,10 @@
 
 #include <stdio.h>
 
-int main(void){
-/*holy ravioli*/
+int main(void)
+{
+/**
+ * holy ravioli*/
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
