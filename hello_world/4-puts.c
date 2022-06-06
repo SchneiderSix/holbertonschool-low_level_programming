@@ -8,6 +8,7 @@ int main(void)
 {
 
 /*
+ * main - Please god
  * holy ravioli
  * wow
  * nice
