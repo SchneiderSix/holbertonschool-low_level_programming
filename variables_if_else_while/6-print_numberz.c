@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char rip;
+	int rip;
 
 	for (rip = 48; rip < 58; rip++)
 	{
