@@ -1,4 +1,4 @@
-#print the thing in the puts with a new line and print zero
+/*print the thing in the puts with a new line and print zero*/
 
 #include <stdio.h>
 
