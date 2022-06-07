@@ -15,7 +15,7 @@ int main(void)
 	{
 		for (second = 48; second < 58; second++)
 		{
-			if (first != second && second != first)
+			if (first != '8' && second != '9' && first != second)
 			{
 				putchar(first);
 				putchar(second);
