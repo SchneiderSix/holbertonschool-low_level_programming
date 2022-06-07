@@ -4,7 +4,7 @@
  *  * main - prints all possible combinations of
  *   * two digits
  *    * Return: Always 0 (Success)
- *     */
+ */
 
 int main(void)
 {
@@ -18,18 +18,20 @@ int main(void)
 		{
 			for (third = 48; third < 58; third++)
 			{
-				if (third > second && second > first)												{
+				if (third > second && second > first)
+				{
 																				putchar(first);
 					putchar(second);
 					putchar(third);
-
-					if (first != 55 || second != 56 || third != 57)											{																putchar(',');
-							putchar(' ');
-						}
+					if (first != 55 || second != 56 || third != 57)
+					{
+						putchar(',');
+						putchar(' ');
 					}
+				}
 			}
 		}
-	}														
+	}
 	putchar('\n');
 	return (0);
 }
