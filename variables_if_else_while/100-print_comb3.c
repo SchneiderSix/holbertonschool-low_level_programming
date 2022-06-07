@@ -15,8 +15,12 @@ int main(void)
 	{
 		for (second = 48; second < 58; second++)
 		{
-			if (first != '8' && second != '9' && first != second)
+			if (second > first)
 			{
+				putchar(first);
+				putchar(second);
+
+			if (first != 57 || second != 58)
 				putchar(',');
 				putchar(' ');
 			}
