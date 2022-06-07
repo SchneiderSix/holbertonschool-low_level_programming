@@ -17,8 +17,6 @@ int main(void)
 		{
 			if (first != '8' && second != '9' && first != second)
 			{
-				putchar(first);
-				putchar(second);
 				putchar(',');
 				putchar(' ');
 			}
