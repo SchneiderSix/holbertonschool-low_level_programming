@@ -20,12 +20,13 @@ int main(void)
 				putchar(first);
 				putchar(second);
 
-			if (first != 57 || second != 58)
+			if (first != 56 || second != 57)
+			{
 				putchar(',');
 				putchar(' ');
 			}
+			}
 		}
-	}
 	putchar('\n');
 	return (0);
 }
