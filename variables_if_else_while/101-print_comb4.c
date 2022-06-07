@@ -18,12 +18,12 @@ int main(void)
 		{
 			for (third = 48; third < 58; third++)
 			{
-				if (third > second > first)													{
+				if (third > second && second > first)												{
 																				putchar(first);
 					putchar(second);
 					putchar(third);
 
-					if (first != 57 || second != 57 || third != 48)											{																putchar(',');
+					if (first != 55 || second != 56 || third != 57)											{																putchar(',');
 							putchar(' ');
 						}
 					}
