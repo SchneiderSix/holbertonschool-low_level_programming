@@ -19,12 +19,13 @@ int main(void)
 		{
 			for (third = 48; third < 58; third++)
 			{
-				for (fourth = 48; fourth < 58; fourth++)
+				for (fourth = 49; fourth < 58; fourth++)
 				{
 					if (fourth >= third  && third >= second && second >= first)
 					{
 						putchar(first);
 						putchar(second);
+						putchar(' ');
 						putchar(third);
 						putchar(fourth);
 
