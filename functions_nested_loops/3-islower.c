@@ -2,7 +2,7 @@
 
 /**
  * _islower - check the char
- * @c - char var cheked
+ * @c: char var cheked
  * Return: 1 for lowerchar
  * 0 for otherwise
  */
