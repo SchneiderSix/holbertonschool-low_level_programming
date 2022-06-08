@@ -2,6 +2,7 @@
 
 /**
  * _islower - check the char
+ * c - is a boy
  * Return: 1 for lowerchar
  * 0 for otherwise
  */
@@ -17,6 +18,6 @@ int _islower(int c)
 	{
 		return (0);
 	}
-	
+
 	_putchar('\n');
 }
