@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * _islower - prints the alphabet
+ * _islower - check the char
+ * Return: 1 for lowerchar
+ * 0 for otherwise
  */
 
-int _islower(void)
+int _islower(int c)
 {
-	int letter;
 
 	if (c >= 'a' && c <= 'z')
 	{
