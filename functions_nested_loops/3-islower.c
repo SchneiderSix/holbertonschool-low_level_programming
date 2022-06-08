@@ -10,7 +10,7 @@ int _islower(int c)
 
 	letter = 'c';
 
-	if(isalpha(letter) != 0) _putchar('1');
+	if(islower(letter)) _putchar('1');
 	else _putchar('0');
 	
 	_putchar('\n');
