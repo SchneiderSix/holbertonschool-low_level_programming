@@ -20,15 +20,15 @@ void times_table(void)
 			_putchar(' ');
 			mult = columnzeros * rowscont;
 
-			if (mult <= 9)
+			if (mult > 9)
 			{
-				_putchar(' ');
-				_putchar(mult);
+				_putchat((mult / 10) + '0');
+				_putchat((mult % 10) + '0');
 			}
 			else
 			{
-				_putchar((mult / 10) + '0');
-				_putchar((mult % 10) + '0');
+				_putchar(' ');
+				_putchar(mult);
 			}
 		}
 		_putchar('\n');
