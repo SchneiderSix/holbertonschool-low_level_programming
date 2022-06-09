@@ -19,7 +19,7 @@ void print_to_98(int n)
 
 	switch (n)
 	{
-		case a:
+		case 'a':
 			printf("%d", n);
 			break;
 	}
