@@ -10,17 +10,16 @@
 
 void print_to_98(int n)
 {
-	int a = 98;
-	int b = 111;
-	int c = 81;
-	int d = 0;
-	int e = -98;
-	int f = -111;
-
-	switch (n)
+	while (n >= 98; || n < 98;)
 	{
-		case 'a':
-			printf("%d", n);
-			break;
+		printf("%d", n)
+
+		if (n == 0)
+		{
+			break
+		}
+		printf(", ")
+		n++
 	}
+	printf("\n");
 }
