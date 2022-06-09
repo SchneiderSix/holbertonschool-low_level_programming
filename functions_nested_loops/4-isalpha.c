@@ -7,7 +7,7 @@
  * 0 for otherwise
  */
 
-int _isalpha(int c);
+int _isalpha(int c)
 {
 
 	if (isalpha(c) == 0)
