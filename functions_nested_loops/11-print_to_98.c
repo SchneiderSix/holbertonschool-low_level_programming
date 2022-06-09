@@ -10,7 +10,7 @@
 
 int main()
 {
-	int numb, count;
+	int numb;
 
 	for(numb = 0; numb <= 98; numb++)
 	{
