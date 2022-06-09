@@ -8,13 +8,11 @@
  * Return:  return result
  */
 
-int main()
+void print_to_98(int n)
 {
-	int numb;
-
-	for(numb = 0; numb <= 98; numb++)
+	for(n = 0; numb <= 98; n++)
 	{
-		printf("%d, ", numb);
+		printf("%d, ", n);
 	}
 	return (0);
 }
