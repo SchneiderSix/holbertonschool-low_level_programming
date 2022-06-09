@@ -23,5 +23,6 @@ int main()
 			_putchar((numb / 10) + '0');
 			_putchar((numb % 10) + '0');
 		}
-		count++
+		count++;
+	}
 }
