@@ -2,6 +2,8 @@
 
 /**
  * add - sum of two ints
+ * @a: var int
+ * @b: var int
  * Return:  return result
  */
 
