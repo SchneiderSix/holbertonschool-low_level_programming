@@ -5,11 +5,12 @@
  * Return: Always 0.
  */
 
-int add(int, int)
+int add(int a, int b)
 {
-	int a, b, sum;
+	int result;
 
-	sum = a + b;
-	return (sum);
+	result = a + b;
+
+	return (result);
 
 }
