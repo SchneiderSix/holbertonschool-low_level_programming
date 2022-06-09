@@ -1,19 +1,27 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_to_98 - print nat num
+ * main - print nat num
  * until 98
  * @n: var int
  * Return:  return result
  */
 
-void print_to_98(int n)
+int main()
 {
-	for (n = 48; n <= 5756; n++)
+	int numb, count;
+
+	for(count = 0; count <= 98;)
 	{
-		_putchar(n);
-		_putchar(',');
-		_putchar(' ');
-		_putchar('\n');
-	}
+		if (numb <= 9)
+		{
+			_putchar(numb);
+		}
+		else
+		{
+			_putchar((numb / 10) + '0');
+			_putchar((numb % 10) + '0');
+		}
+		count++
 }
