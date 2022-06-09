@@ -12,17 +12,9 @@ int main()
 {
 	int numb, count;
 
-	for(count = 0; count <= 98;)
+	for(numb = 0; numb <= 98; numb++)
 	{
-		if (numb <= 9)
-		{
-			_putchar(numb);
-		}
-		else
-		{
-			_putchar((numb / 10) + '0');
-			_putchar((numb % 10) + '0');
-		}
-		count++;
+		printf("%d, ", numb);
 	}
+	return (0);
 }
