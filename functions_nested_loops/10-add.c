@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * add - print sum of two ints
- * Return: Always 0.
+ * add - sum of two ints
+ * Return:  return result
  */
 
 int add(int a, int b)
