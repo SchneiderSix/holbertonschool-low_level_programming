@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
- * print_sign - print numb
- * @n: int var cheked
- * Return: 1 for positive, -1 for negative
- * 0 for 0
+ * _abs - comput absolute val of int
+ * @r: int var cheked
+ * Return: absolute val of int
  */
 
-int _abs(int)
+int _abs(int r)
 {
-	int n;
-	return n*(2*n+1)%2);
+	if (r >= 0)
+	{
+		return (r);
+	}
+	else
+	{
+		return (-r);
+	}
 }
