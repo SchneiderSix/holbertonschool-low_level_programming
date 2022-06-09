@@ -18,7 +18,6 @@ void times_table(void)
 		{
 			_putchar(',');
 			_putchar(' ');
-			
 			mult = columnzeros * rowscont;
 
 			if (mult <= 9)
