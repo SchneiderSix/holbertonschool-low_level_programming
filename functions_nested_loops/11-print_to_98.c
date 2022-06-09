@@ -12,6 +12,6 @@ void print_to_98(int n)
 {
 	switch (n)
 	{
-		case(n = 98): printf("%d", n);
+		case(n = '98'): printf("%d", n);
 	}
 }
