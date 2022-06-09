@@ -10,11 +10,11 @@ void times_table(void)
 
 	int columnzeros, rowscont, mult;
 
-	for (columnzeros = '0'; columnzeros <= '9'; columnzeros++)
+	for (columnzeros = 0; columnzeros <= 9; columnzeros++)
 	{
 		_putchar('0');
 
-		for (rowscont = '1'; rowscont <= '9'; rowscont++)
+		for (rowscont = 1; rowscont <= 9; rowscont++)
 		{
 			_putchar(',');
 			_putchar(' ');
