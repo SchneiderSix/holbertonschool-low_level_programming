@@ -1,23 +1,20 @@
 #include "main.h"
 
 /**
- * print_more_numbers - print numbers
+ * more_numbers - print numbers
  * Return: Always 0.
  */
 
 void more_numbers(void)
 {
-	int pepito;
-	char count;
+	int count, n;
 
-	count = 1;
-
-	while (count < 11)
+	for (count = 1; count <= 10; count++)
 	{
 
-		for (pepito = 48; pepito <= 57; pepito++)
+		for (n = 0; n <= 14; n++)
 		{
-			if (pepito > 57)
+			if (n < 10)
 			{
 				_putchar((pepito / 10) + '0');
 			}
