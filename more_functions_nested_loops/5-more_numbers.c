@@ -8,16 +8,16 @@
 void print_most_numbers(void)
 {
 	int pepito;
-	int count;
+	char count;
 
 	count = 1;
 
 	while (count < 11)
 	{
 
-		for (pepito = '0'; pepito < '14'; pepito++)
+		for (pepito = 48; pepito <= 57; pepito++)
 		{
-			if (pepito < "10")
+			if (pepito > 57)
 			{
 				_putchar((pepito / 10) + '0');
 			}
@@ -25,7 +25,7 @@ void print_most_numbers(void)
 			{
 				_putchar((pepito % 10) + '0');
 			}
-		count++
+		count++;
 		}
 	}
 	_putchar('\n');
