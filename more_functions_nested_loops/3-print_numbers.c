@@ -13,5 +13,5 @@ void print_numbers(void)
 	{
 		_putchar(pepito);
 	}
-	_putchar(' ');
+	_putchar('\n');
 }
