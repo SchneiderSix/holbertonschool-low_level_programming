@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _isupper - uppercase test
+ * _isupper - uppercase test
  * @c: char var
  * Return: 1 if upp, 0 otherwise
  */
