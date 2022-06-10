@@ -10,16 +10,21 @@ void print_diagonal(int n)
 {
 	while (n > 0)
 	{
+		int rip;
 		int spa;
 		
-		spa = 0;
-
-		spa++;
-		if (spa == n)
+		for (spa = 0; spa < n; spa++)
 		{
-			_putchar('\\');
+			if (spa == rip)
+			{
+				_putchar('\\');
+			}
+			else if (spa < rip)
+			{
+				_putchar(' ');
+			}
 		}
-		_putchar(' ');
+		_putchar('\n');
 		n--;
 	}
 	_putchar('\n');
