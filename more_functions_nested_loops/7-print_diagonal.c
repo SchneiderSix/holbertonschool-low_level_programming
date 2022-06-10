@@ -8,11 +8,7 @@
 
 void print_diagonal(int n)
 {
-	if (n <= 0)
-	{
-		_putchar('\n');
-	}
-	else
+	if (n > 0)
 	{
 		int hiq, liq;
 
@@ -24,12 +20,16 @@ void print_diagonal(int n)
 				{
 					_putchar('\\');
 				}
-				else if (hiq < liq)
+				else if (liq < hiq)
 				{
 					_putchar(' ');
 				}
 			}
 			_putchar('\n');
 		}
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
