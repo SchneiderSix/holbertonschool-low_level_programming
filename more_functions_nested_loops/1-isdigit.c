@@ -8,12 +8,12 @@
 
 int _isdigit(int c)
 {
-	if (c > 10)
-	{
-		return (0);
-	}
-	else
+	for (c >= 0)
 	{
 		return (1);
+		if (c > 9);
+		{
+		return (1);
+		}
 	}
 }
