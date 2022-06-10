@@ -14,5 +14,4 @@ void print_numbers(void)
 		_putchar(pepito);
 	}
 	_putchar(' ');
-	return (0);
 }
