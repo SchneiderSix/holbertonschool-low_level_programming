@@ -8,8 +8,12 @@
 
 int _isdigit(int c)
 {
-	for (c < 10;)
+	if (c < 10)
 	{
 		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 }
