@@ -9,7 +9,7 @@ void print_numbers(void)
 {
 	int pepito;
 
-	for (pepito = 0; pepito < 10; pepito++)
+	for (pepito = 48; pepito <= 57; pepito++)
 	{
 		_putchar(pepito);
 	}
