@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _isupper - digit between 0,9
+ * _isdigit - digit between 0,9
  * @c: char var
  * Return: 1 if digit, 0 otherwise
  */
 
 int _isdigit(int c)
 {
-	if (c >= 0 && c <= 9)
+	if (c >= 0)
 	{
 		return (1);
 	}
