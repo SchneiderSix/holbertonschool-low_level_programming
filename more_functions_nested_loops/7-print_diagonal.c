@@ -15,7 +15,7 @@ void print_diagonal(int n)
 		
 		for (spa = 0; spa < n; spa++)
 		{
-			if (spa == rip)
+			if (spa == n)
 			{
 				_putchar('\\');
 			}
