@@ -15,7 +15,7 @@ void print_most_numbers(void)
 	while (count < 11)
 	{
 
-		for (pepito = "0"; pepito <= "14"; pepito++)
+		for (pepito = '0'; pepito < '14'; pepito++)
 		{
 			if (pepito < "10")
 			{
