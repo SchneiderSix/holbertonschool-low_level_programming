@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * more_numbers - print numbers
+ * print_line - print numbers
+ * @n: int var
  * Return: Always 0.
  */
 
