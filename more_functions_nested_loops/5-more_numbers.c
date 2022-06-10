@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_most_numbers - print numbers
+ * print_more_numbers - print numbers
  * Return: Always 0.
  */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
 	int pepito;
 	char count;
