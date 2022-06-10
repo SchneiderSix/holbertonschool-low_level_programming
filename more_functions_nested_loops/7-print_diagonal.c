@@ -10,7 +10,6 @@ void print_diagonal(int n)
 {
 	while (n > 0)
 	{
-		int rip;
 		int spa;
 		
 		for (spa = 0; spa < n; spa++)
@@ -19,7 +18,7 @@ void print_diagonal(int n)
 			{
 				_putchar('\\');
 			}
-			else if (spa < rip)
+			else if (spa < n)
 			{
 				_putchar(' ');
 			}
