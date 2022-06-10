@@ -11,7 +11,7 @@ void print_most_numbers(void)
 
 	for (pepito = 48; pepito <= 57; pepito++)
 	{
-		if ((pepito != 2) || (pepito != 4))
+		if ((pepito != 50) || (pepito != 52))
 		{
 			_putchar(pepito);
 		}
