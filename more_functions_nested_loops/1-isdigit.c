@@ -8,11 +8,11 @@
 
 int _isdigit(int c)
 {
-	if (c < 10)
+	while (c < 10)
 	{
 		return (1);
 	}
-	else
+	while (c >= 10)
 	{
 		return (0);
 	}
