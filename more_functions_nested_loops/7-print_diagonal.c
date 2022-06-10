@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - print numbers
+ * print_diagonal - print numbers
  * @n: int var
  * Return: Always 0.
  */
