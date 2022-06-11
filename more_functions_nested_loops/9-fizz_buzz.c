@@ -11,25 +11,25 @@ int main(void)
 {
 	int lowiq;
 
-	for (lowiq = 1; lowiq < 100; lowiq++)
+	for (lowiq = 1; lowiq < 101; lowiq++)
 	{
 		if (lowiq % 15 == 0)
 		{
-			_putchar("FizzBuzz");
+			printf(" FizzBuzz");
 		}
 		else if (lowiq % 5 == 0)
 		{
-			_putchar("Buzz");
+			printf(" Buzz");
 		}
 		else if (lowiq % 3 == 0)
 		{
-			_putchar("Fizz");
+			printf(" Fizz");
 		}
 		else
 		{
-			_putchar(lowiq);
+			printf(" %d",lowiq);
 		}
 	}
-	_putchar('\n');
+	printf('\n');
 	return (0);
 }
