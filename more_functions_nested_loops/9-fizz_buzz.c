@@ -30,7 +30,7 @@ int main(void)
 		}
 		else
 		{
-			printf(" %d",lowiq);
+			printf(" %d", lowiq);
 		}
 	}
 	printf("\n");
