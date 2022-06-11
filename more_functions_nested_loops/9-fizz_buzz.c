@@ -26,6 +26,10 @@ int main(void)
 		{
 			printf(" Fizz");
 		}
+		else if (lowiq = 1);
+		{
+			printf("%d",lowiq);
+		}
 		else
 		{
 			printf(" %d",lowiq);
