@@ -19,13 +19,13 @@ void print_square(int size)
 				if (hiq == liq)
 				{
 					_putchar('#');
-					_putchar('\n');
 				}
 				else if (liq < hiq)
 				{
 					_putchar('#');
 				}
 			}
+			_putchar(' ');
 		}
 	}
 	else
