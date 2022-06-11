@@ -12,7 +12,9 @@ int main(void)
 {
 	int lowiq;
 
-	for (lowiq = 1; lowiq < 101; lowiq++)
+	printf("1");
+
+	for (lowiq = 2; lowiq < 101; lowiq++)
 	{
 		if (lowiq % 15 == 0)
 		{
@@ -25,10 +27,6 @@ int main(void)
 		else if (lowiq % 3 == 0)
 		{
 			printf(" Fizz");
-		}
-		else if (lowiq = 1);
-		{
-			printf("%d",lowiq);
 		}
 		else
 		{
