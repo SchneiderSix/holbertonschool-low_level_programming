@@ -15,15 +15,15 @@ int main(void)
 	{
 		if (lowiq % 15 == 0)
 		{
-			_putchar(FizzBuzz);
+			_putchar("FizzBuzz");
 		}
 		else if (lowiq % 5 == 0)
 		{
-			_putchar(Buzz);
+			_putchar("Buzz");
 		}
 		else if (lowiq % 3 == 0)
 		{
-			_putchar(Fizz);
+			_putchar("Fizz");
 		}
 		else
 		{
