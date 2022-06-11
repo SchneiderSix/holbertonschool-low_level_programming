@@ -16,14 +16,7 @@ void print_square(int size)
 		{
 			for (liq = 0; liq < size; liq++)
 			{
-				if (hiq > liq)
-				{
-					_putchar('#');
-				}
-				else if (liq < hiq)
-				{
-					_putchar('#');
-				}
+				_putchar('#');
 			}
 			_putchar('\n');
 		}
