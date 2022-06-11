@@ -12,7 +12,7 @@ void print_square(int size)
 	{
 		int hiq, liq;
 
-		for (hiq = size)
+		for (hiq = size;)
 		{
 			for (liq = 0; liq < size; liq++)
 			{
