@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_square - print numbers
+ * print_triangle - print triangle
  * @size: int var
  * Return: Always 0.
  */
@@ -12,9 +12,9 @@ void print_triangle(int size)
 	{
 		int i, n;
 		
-		for (i = 1; i > 0; i--)
+		for (i = 1; i >= size; i++)
 		{
-			for (n = size; n < i; j++)
+			for (n = 1; n > i; n++)
 			{
 				_putchar(#);
 			}
