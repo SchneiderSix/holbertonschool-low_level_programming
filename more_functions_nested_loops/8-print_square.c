@@ -12,11 +12,11 @@ void print_square(int size)
 	{
 		int hiq, liq;
 
-		for (hiq = size;)
+		for (hiq = 0; hiq < size; hiq++)
 		{
 			for (liq = 0; liq < size; liq++)
 			{
-				if (hiq == liq)
+				if (hiq > liq)
 				{
 					_putchar('#');
 				}
