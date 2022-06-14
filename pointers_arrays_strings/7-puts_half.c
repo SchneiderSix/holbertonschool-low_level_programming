@@ -28,7 +28,7 @@ void puts_half(char *str)
 		}
 		_putchar('\n');
 	}
-	else if (last % 2)
+	else
 	{
 		for (p = (last - 1) / 2; p < last; p++)
 		{
