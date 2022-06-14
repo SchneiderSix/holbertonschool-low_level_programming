@@ -18,11 +18,10 @@ void print_rev(char *s)
 	{
 		i++;
 		s++;
+		for (; i == 0; i--)
+		{
+			_putchar(s[i]);
+		}
+		_putchar('\n');
 	}
-
-	for (; i == 0; i--)
-	{
-		_putchar(s[i]);
-	}
-	_putchar('\n');
 }
