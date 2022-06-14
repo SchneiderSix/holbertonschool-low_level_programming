@@ -10,7 +10,9 @@
 
 void print_rev(char *s)
 {
-	int i, last, lastlast;
+	int i;
+	int last;
+	int lastlast;
 
 	i = 0;
 
