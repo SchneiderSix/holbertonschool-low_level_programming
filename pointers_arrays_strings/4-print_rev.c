@@ -12,6 +12,7 @@ void print_rev(char *s)
 {
 	int i;
 	int last;
+	int pepito;
 
 	i = 0;
 
@@ -20,9 +21,11 @@ void print_rev(char *s)
 		i++;
 	}
 
-	for (last = i; last == 0; last--)
+	last = i;
+
+	for (pepito = last - 1; pepito == 0; pepito--)
 	{
-		_putchar(s[last]);
+		_putchar(s[pepito]);
 	}
 	_putchar('\n');
 }
