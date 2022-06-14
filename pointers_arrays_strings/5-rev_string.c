@@ -11,7 +11,7 @@ void rev_string(char *s)
 	int i;
 	int last;
 	int pepito;
-	char [pepito];
+	char temp;
 
 	i = 0;
 
