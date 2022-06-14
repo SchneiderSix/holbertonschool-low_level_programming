@@ -30,9 +30,10 @@ void puts_half(char *str)
 	}
 	else
 	{
-		for (p = (last - 1) / 2; p < last; p++)
+		for (p = (last - 1) / 2; p < last - 1; p++)
 		{
 			_putchar(str[p + 1]);
 		}
+		_putchar('\n');
 	}
 }
