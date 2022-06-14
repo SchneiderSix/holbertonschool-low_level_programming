@@ -23,7 +23,7 @@ void print_rev(char *s)
 
 	last = i;
 
-	for (pepito = last - 1; pepito == 0; pepito--)
+	for (pepito = last - 1; pepito >= 0; pepito--)
 	{
 		_putchar(s[pepito]);
 	}
