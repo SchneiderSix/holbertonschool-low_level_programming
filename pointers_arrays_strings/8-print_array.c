@@ -18,11 +18,11 @@ void print_array(int *a, int n)
 	{
 		if (a[count] != '\0')
 		{
-			printf("%p, ", a[count];
+			printf("%d, ", a[count];
 		}
 		else
 		{
-			printf("%p", a[count];
+			printf("%d", a[count];
 		}
 	}
 }
