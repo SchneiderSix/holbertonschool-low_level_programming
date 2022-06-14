@@ -22,7 +22,7 @@ void rev_string(char *s)
 
 	last = i - 1;
 
-	for (pepito = 0; pepito < i/2; pepito++)
+	for (pepito = 0; pepito < i / 2; pepito++)
 	{
 		temp = s[pepito];
 		s[pepito] = s[last];
