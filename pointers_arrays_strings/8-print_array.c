@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * void print_array - function that prints
+ * print_array - function that prints
  * n elements of an array of integers
  * , followed by a new line
  * @n: var
- * @*a: pointer
+ * @a: pointer
  *Return: Always 0.
  */
 
