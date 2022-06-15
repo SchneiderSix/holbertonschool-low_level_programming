@@ -16,13 +16,13 @@ void print_array(int *a, int n)
 
 	for (count = 0; count < n; count++)
 	{
-		if (a[count] != '\0')
-		{
-			printf("%d, ", a[count]);
-		}
-		else if (a[count] == '\0')
+		if (count = 0)
 		{
 			printf("%d", a[count]);
+		}
+		else
+		{
+			printf(", %d", a[count]);
 		}
 	}
 }
