@@ -8,10 +8,16 @@
 
 char *string_toupper(char *h)
 {
-	const char comp = 'a' - 'A';
+	int i;
 
-	while (*h)
+	i = 0;
+
+	while (h[i] != '\0')
 	{
-		*h = (*h >= 'a' && *h <= 'A') ? *h -= comp : *h;
+		i++
+		if (h[i] >= 'a' && h[i] <= 'z')
+		{
+			h[i] = [hi];
+		}
 	}
 }
