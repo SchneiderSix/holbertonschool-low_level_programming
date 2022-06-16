@@ -14,7 +14,7 @@ char *string_toupper(char *h)
 
 	while (h[i] != '\0')
 	{
-		i++
+		i++;
 		if (h[i] >= 'a' && h[i] <= 'z')
 		{
 			h[i] = [hi];
