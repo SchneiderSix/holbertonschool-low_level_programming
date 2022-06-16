@@ -21,7 +21,8 @@ char *leet(char *h)
 		{
 			if (h[i] == letters[p])
 			{
-				numbers[p] = h[i];
+				h[i] = numbers[p];
+			}
 		}
 		i++;
 	}
