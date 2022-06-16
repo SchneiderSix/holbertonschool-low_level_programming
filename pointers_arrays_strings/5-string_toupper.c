@@ -2,16 +2,16 @@
 
 /**
  * *string_toupper - explicit name
- * @*: var
+ * @h: var
  *Return: Always 0.
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *h)
 {
 	const char comp = 'a' - 'A';
 
-	while (*)
+	while (*h)
 	{
-		* = (* >= 'a' && * <= 'A') ? * -= comp : *;
+		*h = (*h >= 'a' && *h <= 'A') ? *h -= comp : *h;
 	}
 }
