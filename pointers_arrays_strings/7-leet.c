@@ -13,6 +13,7 @@ char *leet(char *h)
 
 	char *letters = "aAeEoOtTlL";
 	char *numbers = "4433007711";
+
 	i = 0;
 
 	while (h[i] != '\0')
