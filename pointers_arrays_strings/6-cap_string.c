@@ -18,7 +18,7 @@ char *cap_string(char *h)
 		i++;
 		while (!(h[i] >= 'a' && h[i] <= 'z'))
 		{
-			i++
+			i++;
 		}
 		if (h[i - 1] == '0' || h[i - 1] == ' ' || h[i - 1] == '\t' ||
 		h[i - 1] == '\n' || h[i - 1] == ',' ||
