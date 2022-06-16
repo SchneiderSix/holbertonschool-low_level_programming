@@ -13,8 +13,8 @@ char *leet(char *h)
 	char letters[10];
 	char numbers[10];
 
-	letters[10] = {"aAeEoOtTlL"}
-	numbers[10] = {"4433007711"}
+	letters[10] = {"aAeEoOtTlL"};
+	numbers[10] = {"4433007711"};
 	i = 0;
 
 	while (h[i] != '\0')
