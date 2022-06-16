@@ -15,7 +15,6 @@ char *cap_string(char *h)
 
 	while (h[i] != '\0')
 	{
-		i++;
 		while (!(h[i] >= 'a' && h[i] <= 'z'))
 		{
 			i++;
@@ -30,6 +29,7 @@ char *cap_string(char *h)
 		{
 			h[i] -= 32;
 		}
+		i++
 	}
 	return (h);
 }
