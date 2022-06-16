@@ -10,11 +10,9 @@ char *leet(char *h)
 {
 	int i;
 	int p;
-	char *letters;
-	char *numbers;
 
-	*letters = "aAeEoOtTlL";
-	*numbers = "4433007711";
+	char *letters = "aAeEoOtTlL";
+	char *numbers = "4433007711";
 	i = 0;
 
 	while (h[i] != '\0')
