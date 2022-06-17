@@ -1,5 +1,5 @@
 #include "main.h"
-#include <bits/stdc++.h>
+#include <stdio.h>
 
 /**
  * print_diagsums - sum in diagonal
@@ -33,7 +33,6 @@ void print_diagsums(int *a, int size)
 			}
 		}
 	}
-		_putchar(fd);
-		_putchar(", "sd);
+	printf("%d, %d", fd, sd);
 
 }
