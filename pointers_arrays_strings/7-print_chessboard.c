@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prints_chessboard - explicit name
+ * print_chessboard - explicit name
  * @a: var
  * Return: Always 0.
  */
@@ -17,6 +17,7 @@ void print_chessboard(char (*a)[8])
 		{
 			_putchar(a[i][k]);
 		}
+		_putchar('\n');
 	}
 
 }
