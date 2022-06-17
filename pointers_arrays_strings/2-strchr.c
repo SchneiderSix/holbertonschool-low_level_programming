@@ -5,7 +5,8 @@
  * in a string
  * @s: var
  * @c: var
- *Return: Always 0.
+ * Return: return pointer to first
+ * occurence or null
  */
 
 char *_strchr(char *s, char c)
