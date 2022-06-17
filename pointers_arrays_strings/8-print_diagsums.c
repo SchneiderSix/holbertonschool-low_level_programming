@@ -14,9 +14,6 @@ void print_diagsums(int *a, int size)
 	int sd;
 	int i;
 	int k;
-	int arr[][];
-
-	a = arr;
 
 	fd = 0;
 
@@ -28,11 +25,11 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == k)
 			{
-				fd += arr[i][k];
+				fd += a[(size * i) + i];
 			}
 			if ((i + k) == (size - 1))
 			{
-				sd += arr[i][k];
+				sd += a[(size * (k + 1)) - (k - 1)];
 			}
 		}
 	}
