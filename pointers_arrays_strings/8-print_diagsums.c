@@ -1,4 +1,5 @@
 #include "main.h"
+#include <bits/stdc++.h>
 
 /**
  * print_diagsums - sum in diagonal
@@ -9,14 +10,14 @@
 
 void print_diagsums(int *a, int size)
 {
-	char *fd;
-	char *sd;
+	int fd;
+	int sd;
 	int i;
 	int k;
 
-	*fd = 0;
+	fd = 0;
 
-	*sd = 0;
+	sd = 0;
 
 	for (i = 0; i < size; i++)
 	{
