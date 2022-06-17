@@ -10,12 +10,10 @@
 
 void print_diagsums(int *a, int size)
 {
-	int fd;
-	int sd;
+	unsigned int fd;
+	unsigned int sd;
 	int i;
 	int k;
-
-	*a = a[];
 
 	fd = 0;
 
