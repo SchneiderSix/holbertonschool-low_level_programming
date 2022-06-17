@@ -15,6 +15,8 @@ void print_diagsums(int *a, int size)
 	int i;
 	int k;
 
+	*a = a[];
+
 	fd = 0;
 
 	sd = 0;
@@ -33,6 +35,6 @@ void print_diagsums(int *a, int size)
 			}
 		}
 	}
-	printf("%d, %d", fd, sd);
+	printf("%d, %d\n", fd, sd);
 
 }
