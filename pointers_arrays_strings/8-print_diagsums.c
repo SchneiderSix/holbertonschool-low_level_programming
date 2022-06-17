@@ -24,11 +24,11 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == k)
 			{
-				*fd += a[i][k];
+				fd += a[i][k];
 			}
 			if ((i + k) == (size - 1))
 			{
-				*sd += a[i][k];
+				sd += a[i][k];
 			}
 		}
 	}
