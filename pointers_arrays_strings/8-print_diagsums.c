@@ -29,7 +29,7 @@ void print_diagsums(int *a, int size)
 			}
 			if ((i + k) == (size - 1))
 			{
-				sd += a[(size * (i + 1)) - (i - 1)];
+				sd += a[(size * i) + i];
 			}
 		}
 	}
