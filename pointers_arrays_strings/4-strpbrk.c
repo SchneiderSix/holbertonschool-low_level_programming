@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
  * *_strpbrk - return pointer
@@ -13,7 +12,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	size_t i, p;
+	int i, p;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
