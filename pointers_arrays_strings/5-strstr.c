@@ -19,14 +19,14 @@ char *_strstr(char *haystack, char *needle)
 	const char *a;
 	const char *b;
 
-	*a = haystack;
-	*b = needle;
+	a = haystack;
+	b = needle;
 
 	for (;;)
 	{
 		if (!*b)
 		{
-			return (*haystack);
+			return (haystack);
 		}
 		if (!*a)
 		{
