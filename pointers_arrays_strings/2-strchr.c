@@ -18,12 +18,12 @@ char *_strchr(char *s, char c)
 		{
 			return ((char *)s);
 		}
-		if (c == '\0')
-		{
-			_putchar('\n');
-		}
 
 		s++;
+	}
+	if (c == '\0')
+	{
+		break;
 	}
 	return (NULL);
 }
