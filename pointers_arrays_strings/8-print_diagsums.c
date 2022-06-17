@@ -9,14 +9,14 @@
 
 void print_diagsums(int *a, int size)
 {
-	char fd;
-	char sd;
+	char *fd;
+	char *sd;
 	int i;
 	int k;
 
-	fd = 0;
+	*fd = 0;
 
-	sd = 0;
+	*sd = 0;
 
 	for (i = 0; i < size; i++)
 	{
@@ -24,11 +24,11 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == k)
 			{
-				fd += a[i][k];
+				*fd += a[i][k];
 			}
 			if ((i + k) == (size - 1))
 			{
-				sd += a[i][k];
+				*sd += a[i][k];
 			}
 		}
 	}
