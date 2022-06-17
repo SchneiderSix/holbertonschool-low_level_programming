@@ -21,13 +21,8 @@ char *_strchr(char *s, char c)
 
 		s++;
 	}
-	if (c == '\0')
-	{
-		_putchar('\n');
-	}
-	else
+	if (*s == 0)
 	{
 	return (NULL);
 	}
-	return (0);
 }
