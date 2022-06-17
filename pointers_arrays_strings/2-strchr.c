@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * *_strchr - locate a char
@@ -23,6 +24,6 @@ char *_strchr(char *s, char c)
 	}
 	if (s[i] != c)
 	{
-		return NULL;
+		return (NULL);
 	}
 }
