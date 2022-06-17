@@ -3,13 +3,14 @@
 /**
  * print_diagsums - sum in diagonal
  * @a: var
+ * @size: var
  * Return: Always 0.
  */
 
 void print_diagsums(int *a, int size)
 {
-	int fd;
-	int sd;
+	char fd;
+	char sd;
 	int i;
 	int k;
 
