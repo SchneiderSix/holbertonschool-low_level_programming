@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdeff.h>
+#include <stddef.h>
 
 /**
  * *_strspn - return numb of bytes
