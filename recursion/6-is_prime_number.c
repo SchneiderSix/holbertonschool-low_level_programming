@@ -12,7 +12,7 @@ int is_prime_number(int n)
 
 	k = n;
 
-	if (n > 0 && n % 1 == 0 && n % k == 0 || n == 1)
+	if ((n > 0 && n % 1 == 0 && n % k == 0) || (n == 1))
 	{
 		return (1);
 	}
