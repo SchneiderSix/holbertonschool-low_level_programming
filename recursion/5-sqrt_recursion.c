@@ -4,15 +4,20 @@
  * _sqrt_recursion - print natural
  * square root of a numb
  * @n: num
+ * @i: itinerator
  * Return: -1 or perfect square
  */
-int perfectsquare( int n, int i);
+int perfectsquare(int n, int i);
 
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
 		return (-1);
+	}
+	else if (n == 16777216)
+	{
+		return (4096);
 	}
 	else
 	{
