@@ -6,6 +6,7 @@
  * @n: num
  * Return: -1 or perfect square
  */
+int perfectsquare( int n, int i);
 
 int _sqrt_recursion(int n)
 {
