@@ -15,13 +15,9 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	else if (n == 16777216)
-	{
-		return (4096);
-	}
 	else
 	{
-		return (perfectsquare(n, (n + 1) / 2));
+		return (perfectsquare(n, 0));
 	}
 }
 
@@ -44,6 +40,6 @@ int perfectsquare(int n, int i)
 	}
 	else
 	{
-		return (perfectsquare(n, i - 1));
+		return (perfectsquare(n, i + 1));
 	}
 }
