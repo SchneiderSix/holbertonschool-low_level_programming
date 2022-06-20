@@ -4,7 +4,7 @@
  * _sqrt_recursion - print natural
  * square root of a numb
  * @n: num
- * Return: natural square or -1
+ * Return: -1 or perfect square
  */
 
 int _sqrt_recursion(int n)
@@ -15,6 +15,29 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return _sqrt_recursion((n - 1) + n + n - 1);
+		return (perfectsquare(n, (n + 1) / 2));
+	}
+}
+
+/**
+ * perfectsquare - explicit name
+ * @n: numb
+ * @i: itinerator
+ * Return: -1 or perf square
+ */
+
+int perfectsquare(int n, int i)
+{
+	if (i < 1)
+	{
+		return (-1);
+	}
+	else if (i * i == n)
+	{
+		return (i);
+	}
+	else
+	{
+		return (perfectsquare(n, i - 1));
 	}
 }
