@@ -5,16 +5,12 @@
  * main - print name of program with
  * new line
  * @argc: numb of comm line arguments
+ * @argv: array of argc
  * Return: 0
  */
 
-void main(int argc)
-{
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("%d\n", i);
-	}
+int main(int argc, char *argv[] __attribute__((unused)))
+{	
+	printf("%d\n", argc - 1);
 	return (0);
 }
