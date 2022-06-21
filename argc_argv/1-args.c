@@ -5,11 +5,10 @@
  * main - print name of program with
  * new line
  * @argc: numb of comm line arguments
- * @argv: array of argc
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc)
 {
 	int i;
 
