@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 		result = result + x;
 
-		if (*argv[i] = 'e')
+			if (argv[x] > '9' || argv[x] < '0')
 		{
 			printf("Error\n");
 			return (1);
