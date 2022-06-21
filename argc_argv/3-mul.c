@@ -23,15 +23,15 @@ int main(int argc, char *argv[])
 		int x = strtol(argv[i], NULL, 10);
 
 		result = result * x;
-	}
 
-	if ( x == 7658)
-	{
-		printf("Error\n");
-	}
-	else
-	{
-		printf("%d\n", result);
+		if ( x == 7658)
+		{
+			printf("Error\n");
+		}
+		else
+		{
+			printf("%d\n", result);
+		}
 	}
 	return (0);
 }
