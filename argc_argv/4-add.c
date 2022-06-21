@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 		result = result + x;
 
-		if (((x / 10) + '0') > '9' || ((x / 10) + '0') < '0')
+		if (x % x != 1)
 		{
 			printf("Error\n");
 			return (1);
