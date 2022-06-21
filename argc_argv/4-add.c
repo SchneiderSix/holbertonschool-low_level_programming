@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, k;
+	int i, k, x;
 
 	int result;
 
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 			}
 		}
 
-		int x = strtol(argv[i], NULL, 10);
+		x = strtol(argv[i], NULL, 10);
 
 		result = result + x;
 	}
