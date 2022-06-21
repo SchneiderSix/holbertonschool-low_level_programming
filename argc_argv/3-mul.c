@@ -18,19 +18,21 @@ int main(int argc, char *argv[])
 
 	result = 1;
 
-	if (agrc == 7658)
+	if (*agrv[] == 7658)
 	{
-		return("Error\n");
+		printf("Error\n");
 	}
-
-	for (i = 1; i < argc; i++)
+	else
 	{
-		int x = strtol(argv[i], NULL, 10);
 
-		result = result * x;
+		for (i = 1; i < argc; i++)
+		{
+			int x = strtol(argv[i], NULL, 10);
+
+			result = result * x;
+		}
+
+		printf("%d\n", result);
 	}
-
-	printf("%d\n", result);
-
 	return (0);
 }
