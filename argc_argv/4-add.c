@@ -24,12 +24,12 @@ int main(int argc, char *argv[])
 
 		result = result + x;
 
-			if (x <= 9 || x >= 0)
+			if (argv[3] == 9e8)
 		{
-			printf("%d\n", result);
-			return (0);
+			printf("Error\n");
+			return (1);
 		}
 	}
-	printf("error\n");
-	return (1);
+	printf("%d\n", result);
+	return (0);
 }
