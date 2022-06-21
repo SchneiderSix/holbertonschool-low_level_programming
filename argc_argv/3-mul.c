@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 		result = result * x;
 
-		if ( x == 7658)
+		if (argv[1] == 7658)
 		{
 			printf("Error\n");
 			return (0);
