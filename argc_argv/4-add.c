@@ -20,15 +20,15 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		int x = strtol(argv[i], NULL, 10);
-
-		result = result + x;
-
-			if (*argv[3] == '9e8')
+		if (argv[i] > '9' || argv[i] < '0')
 		{
 			printf("Error\n");
 			return (1);
 		}
+
+		int x = strtol(argv[i], NULL, 10);
+
+		result = result + x;
 	}
 	printf("%d\n", result);
 	return (0);
