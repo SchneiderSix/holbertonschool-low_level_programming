@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 		result = result + x;
 
-		if (argv[*] = 'e')
+		if (*argv[i] = 'e')
 		{
 			printf("Error\n");
 			return (1);
