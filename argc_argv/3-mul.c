@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		if ( x == 7658)
 		{
 			printf("Error\n");
-			break;
+			return (0);
 		}
 	}
 	printf("%d\n", result);
