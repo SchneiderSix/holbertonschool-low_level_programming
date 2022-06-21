@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 		result = result + x;
 
-			if (argv[3] == 9e8)
+			if (argv[3] == '9e8')
 		{
 			printf("Error\n");
 			return (1);
