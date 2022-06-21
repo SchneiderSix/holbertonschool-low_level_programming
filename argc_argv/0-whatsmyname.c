@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - print name of program with
@@ -10,7 +11,7 @@ void main(int argc, char *argv[])
 	int i;
 	for (i = 0; i < argc; i++)
 	{
-		_putchar(argv[i]);
+		printf("%s ", argv[i]);
 	}
-	_putchar('\n');
+	printf("\n");
 }
