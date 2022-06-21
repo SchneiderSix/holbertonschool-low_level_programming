@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 		result = result * x;
 
-		if (argv[2] == '\0')
+		if (argv[2] == NULL)
 		{
 			printf("Error\n");
 			return (0);
