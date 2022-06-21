@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int main(int argc)
+void main(int argc)
 {
 	int i;
 
