@@ -20,18 +20,11 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (strcmp(argv[i], 7658) == 0)
-		{
-			printf("Error\n");
-		}
-		else
-		{
-			int x = strtol(argv[i], NULL, 10);
+		int x = strtol(argv[i], NULL, 10);
 
-			result = result * x;
+		result = result * x;
 
-			printf("%d\n", result);
-		}
+		printf("%d\n", result);
 	}
 	return (0);
 }
