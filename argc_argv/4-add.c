@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 
 		result = result + x;
 
-		if (!isdigit(argv[i]))
+		if (isdigit(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
