@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 
 	result = 1;
 
-	if (*agrv[] == 7658)
+	if (*argv[] == 7658)
 	{
 		printf("Error\n");
 	}
