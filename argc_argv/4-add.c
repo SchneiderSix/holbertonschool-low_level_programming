@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, k;
 
 	int result;
 
@@ -20,10 +20,13 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (argv[i] > '9' || argv[i] < '0')
+		for (k = 0; argv[i][k] != NULL; k++)
 		{
-			printf("Error\n");
-			return (1);
+			if (argv[i][k] > '9' || argv[i][k] < '0')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 
 		int x = strtol(argv[i], NULL, 10);
