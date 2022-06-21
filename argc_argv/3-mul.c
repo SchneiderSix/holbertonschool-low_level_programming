@@ -18,6 +18,11 @@ int main(int argc, char *argv[])
 
 	result = 1;
 
+	if (agrc == 7658)
+	{
+		return("Error\n");
+	}
+
 	for (i = 1; i < argc; i++)
 	{
 		int x = strtol(argv[i], NULL, 10);
