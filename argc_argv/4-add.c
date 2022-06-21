@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 		result = result + x;
 
-			if (argv[x] > '9' || argv[x] < '0')
+			if (x > 9 || x < 0)
 		{
 			printf("Error\n");
 			return (1);
