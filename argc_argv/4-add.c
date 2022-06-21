@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 		result = result + x;
 
-		if (x >= 'A' || x <= 'Z' || x >= 'a' || x <= 'z')
+		if (x < 0 || x > 97)
 		{
 			printf("Error\n");
 			return (1);
