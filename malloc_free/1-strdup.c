@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * *create_array - returns pointer to a
+ * *_strdup - returns pointer to a
  * newly allocated space in memory
  * which contains a copy of the
  * string given as a parameter
@@ -19,6 +19,5 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	free(p);
 	return (p);
 }
