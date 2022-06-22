@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
+#include <stdio.h>
 
 /**
  * *_strdup - returns pointer to a
@@ -10,26 +10,40 @@
  * @str: starting char
  * Return: pointer or null
  */
+int _strlen (char *s)
+{
+	int i;
+
+	i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
 
 char *_strdup(char *str)
 {
-	char *p = malloc(sizeof(strlen(str) + 1));
-	
-	char *psrc = str;
+	char *p;
+	int i;
 
-	char *pdst = p;
+	i = 0;
 
-
-	if (str == NULL)
+	if (str == 0)
 	{
 		return (NULL);
 	}
 
-	while (*psrc != 0)
+	if (!(p = (char*)malloc(sizeof(char) * _strlen(src) + 1)))
 	{
-		*pdst = *psrc;
-		pdst++;
-		psrc++;
+		return (NULL);
 	}
+	while (*src)
+	{
+		p[i++] = *src++;
+	}
+	p[i] = '\0'
 	return (p);
+
 }
