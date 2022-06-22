@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * *create_array - returns pointer to a
@@ -18,6 +19,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-
+	free(p);
 	return (p);
 }
