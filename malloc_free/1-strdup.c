@@ -13,11 +13,23 @@
 
 char *_strdup(char *str)
 {
-	char *p = (char *) malloc(sizeof(strlen(str) + 1));
+	char *p = malloc(sizeof(strlen(str) + 1));
+	
+	char *psrc = str;
+
+	char *pdst = p;
+
 
 	if (str == NULL)
 	{
 		return (NULL);
+	}
+
+	while (*psrc != 0)
+	{
+		*pdst = *psrc;
+		pdst++;
+		psrc++;
 	}
 	return (p);
 }
