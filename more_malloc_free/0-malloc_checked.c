@@ -6,13 +6,14 @@
 /**
  * *malloc_checked - allocates memory
  * @b: var
+ * Return: pointer
  */
 
 void *malloc_checked(unsigned int b)
 {
 	void *a = malloc(b);
 
-	if ( a == NULL)
+	if (a == NULL)
 	{
 		exit (98);
 	}
