@@ -10,7 +10,7 @@
  * @str: starting char
  * Return: pointer or null
  */
-int _strlen (char *s)
+int _strlen(char *s)
 {
 	int i;
 
