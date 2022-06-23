@@ -10,40 +10,30 @@
  * @str: starting char
  * Return: pointer or null
  */
-int _strlen(char *s)
-{
-	int i;
-
-	i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
 
 char *_strdup(char *str)
 {
-	char *p;
 	int i;
+	char *s;
 
-	i = 0;
+	if (str == NULL)
+	{
+		return (NULL)
+	}
 
-	if (str == 0)
+	for (i = 0; *(str + i) != '\0'; i++)
+	{
+	}
+	s = malloc(i + 1);
+	if (s == NULL || s == 0)
 	{
 		return (NULL);
 	}
-
-	if (!(p = (char*)malloc(sizeof(char) * _strlen(src) + 1)))
+	for (i = 0; *(str + i) != '\0'; i++)
 	{
-		return (NULL);
+		s[i] = *(str + i);
 	}
-	while (*src)
-	{
-		p[i++] = *src++;
-	}
-	p[i] = '\0';
-	return (p);
+	
+	return (s);
 
 }
