@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 
 /**
  * **alloc_grid - return pointer to
@@ -22,7 +21,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	pep = malloc(sizeof(int) * height);
+	pep = malloc(sizeof(int*) * height);
 	if (pep == NULL)
 	{
 		free(pep);
