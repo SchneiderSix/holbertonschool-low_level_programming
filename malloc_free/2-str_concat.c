@@ -22,7 +22,6 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; (x[k] = s2[i]) != '\0'; ++i, ++k)
 	{
 	}
-	printf("%s\n", x);
-	return (0);
+	return (x);
 
 }
