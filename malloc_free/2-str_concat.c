@@ -13,6 +13,9 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i, k = 0;
+	int rip;
+
+	rip = "";
 
 	char *x = malloc(strlen(s1) + strlen(s2) + 1);
 
@@ -29,15 +32,15 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s1 == NULL)
 	{
-		return (""x);
+		return (rip, x);
 	}
 	if (s2 == NULL)
 	{
-		return (x"");
+		return (x, rip);
 	}
 	if (s1 == NULL && s2 == NULL)
 	{
-		return ("""");
+		return (rip, rip);
 	}
 
 	return (x);
