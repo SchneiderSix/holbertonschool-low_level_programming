@@ -24,16 +24,16 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; (x[k] = s1[i]); ++i, ++k)
 	{
-		if (s1[i] == NULL)
+		if (s1 == NULL)
 		{
-			*s1 = "";
+			s1 = "";
 		}
 	}
 	for (i = 0; (x[k] = s2[i]); ++i, ++k)
 	{
-		if (s2[i] == NULL)
+		if (s2 == NULL)
 		{
-			*s2 = "";
+			s2 = "";
 		}
 	}
 	if (s1 == NULL && s2 == NULL)
