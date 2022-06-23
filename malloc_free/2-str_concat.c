@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 	int i, k = 0;
 	char rip;
 
-	rip = "";
+	*rip = "";
 
 	char *x = malloc(strlen(s1) + strlen(s2) + 1);
 
