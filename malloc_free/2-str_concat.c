@@ -25,5 +25,5 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	return (x);
-	free (x);
+	free(x);
 }
