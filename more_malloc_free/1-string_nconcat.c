@@ -24,13 +24,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (n < len2)
 	{
-		m = malloc(sizeof(char) * (len1 + n));
+		m = malloc(sizeof(char) * (len1 + n + 1));
 	}
 	else
 	{
-		m = malloc(sizeof(char) * (len1 + len2));
+		m = malloc(sizeof(char) * (len1 + len2 + 1));
 	}
-	if (m == NULL)
+	if (!m)
 	{
 		return (NULL);
 	}
