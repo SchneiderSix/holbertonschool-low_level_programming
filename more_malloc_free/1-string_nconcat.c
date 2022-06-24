@@ -47,7 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		m[k] = *(s1 + k);
 	}
-	for (l = 0; l < j; l++)
+	for (l = 0; l < n; l++)
 	{
 		m[k++] = *(s2 + l);
 	}
