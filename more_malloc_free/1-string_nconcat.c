@@ -3,16 +3,17 @@
 #include <stdio.h>
 #include <string.h>
 
-
 /**
- * *malloc_checked - allocates memory
- * @b: var
- * Return: pointer
+ * *string_nconcat - concatenate two strings
+ * @s1: string
+ * @s2: string
+ * @n: var
+ * Return: pointer or null
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, k;
+	unsigned int i, j, k, l;
 	char *m;
 
 	if (s1 == NULL)
@@ -21,9 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		for (i = 0; *(s1 + i) != '\0'; i++)
-	        {
-		}
+		i = strlen(s1);
 	}
 	if (s2 == NULL)
 	{
@@ -31,15 +30,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		for (j = 0; *(s2 + j) != '\0'; j++)
-		{
-		}
+		j = strlen(s2);
 		if (n < j)
 		{
 			j = n;
 		}
 	}
-	j += i;
+	j = j + i;
 	m = malloc(sizeof(char) * (j + 1));
 
 	if (m == NULL)
@@ -50,9 +47,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		m[k] = *(s1 + k);
 	}
-	for (i = 0; k < j; i++)
+	for (l = i; l < j; l++)
 	{
-		m[k++] = *(s2 + i);
+		m[k++] = *(s2 + l);
 	}
 	m[k] = '\0';
 	return (m);
