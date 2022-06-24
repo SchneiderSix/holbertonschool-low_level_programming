@@ -37,11 +37,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 	}
 	j = j + i;
-	m = malloc(sizeof(char *) * (j + 1));
+	m = malloc(sizeof(char *) * j);
 
 	if (m == NULL)
 	{
-		return ("");
+		return (NULL);
 	}
 	for (k = 0; k < i; k++)
 	{
