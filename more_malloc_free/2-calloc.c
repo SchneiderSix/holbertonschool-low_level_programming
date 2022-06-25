@@ -13,11 +13,22 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *m;
-	int i;
+	unsigned int i;
 
-	for (i = 0; i < nmemb; i++)
+	m = malloc(nmemb * size)
+
+	if (nmemb == 0 || size == 0)
 	{
-		m[i] = calloc(sizeof(char);
+		return (NULL);
+	}
+
+	if (m == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < (nmemb * size); i++)
+	{
+		m[i] = 0;
 	}
 	return (m);
 }
