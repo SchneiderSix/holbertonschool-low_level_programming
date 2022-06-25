@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	marray = malloc(sizeof(int) * max);
+	marray = malloc(sizeof(int) * (max - min + 1));
 
 	if (marray == NULL)
 	{
