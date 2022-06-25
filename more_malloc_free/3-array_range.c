@@ -13,7 +13,7 @@
 int *array_range(int min, int max)
 {
 	int *marray;
-	unsigned int i;
+	int i;
 
 	if (min > max)
 	{
