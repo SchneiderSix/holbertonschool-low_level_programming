@@ -3,11 +3,8 @@
 #include <stdio.h>
 
 /**
- * init_dog - initialize a var of type
+ * print_dog - prints a struc dog
  * @d: pointer to struct dog initialize
- * @name: var
- * @age: var
- * @owner: var
  */
 
 void print_dog(struct dog *d)
