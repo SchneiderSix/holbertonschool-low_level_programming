@@ -9,7 +9,6 @@
  * @owner: var
  * Return: pointer
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *bobby;
@@ -21,12 +20,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-	for (iname = 0; name[iname] != '\0'; iname++)
-	{
-	}
-	for (iowner = 0; owner[iowner] != '\0'; iowner++)
-	{
-	}
+	for (iname = 0; name[iname] != '\0'; iname++){}
+	for (iowner = 0; owner[iowner] != '\0'; iowner++){}
 	newname = malloc(sizeof(char) * iname + 1);
 	if (newname == NULL)
 	{
@@ -48,10 +43,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		newowner[i] = owner[i];
 	}
-
 	bobby->name = newname;
 	bobby->age = age;
 	bobby->owner = newowner;
 	return (bobby);
-
 }
