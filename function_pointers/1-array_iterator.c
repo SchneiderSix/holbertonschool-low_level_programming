@@ -2,14 +2,17 @@
 #include <stdlib.h>
 
 /**
- * print_name - function that prints name
- * @name: var
- * @f: pointer to function
+ * array_iterator - executes every element
+ * of array
+ * @array: array
+ * @size: size of array
+ * @action: pointer to function
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int i;
+
 	if (!action)
 	{
 		return;
