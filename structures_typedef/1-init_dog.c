@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdio.h>
+#include <stlib.h>
 
 /**
  * init_dog - initialize a var of type
@@ -13,7 +13,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
 	{
-		printf("Ok\n");
+		d = malloc(sizeof(struct dog));
 	}
 
 	d->name = name;
