@@ -24,12 +24,12 @@ int main(int argc, char *argv[])
 	if ((*argv[2] == '%' || *argv[2] == '/') && *argv[3] == '0')
 	{
 		printf("Error\n");
-		exit(99);
+		exit(100);
 	}
 	if (argv[2] == NULL)
 	{
 		printf("Error\n");
-		exit(100);
+		exit(99);
 	}
 
 	calc = get_op_func(op_check);
