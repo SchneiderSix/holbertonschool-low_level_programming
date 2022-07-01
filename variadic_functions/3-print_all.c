@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 					break;
 				case 'f':
 					printf("%s%f", separator, va_arg(list, double));
-					break:
+					break;
 				case 's':
 					string = va_arg(list, char *);
 
