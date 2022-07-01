@@ -27,13 +27,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		p = (va_arg(list, char *));
 
+		if (p == NULL)
+		{
+			printf("(nill)");
+		}
+
 		if (separator == NULL)
 		{
 			printf("%s", p);
-		}
-		else if (p == NULL)
-		{
-			printf("(nil)");
 		}
 		else
 		{
