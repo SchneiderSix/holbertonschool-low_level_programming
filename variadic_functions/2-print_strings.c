@@ -29,14 +29,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (p == NULL)
 		{
-			printf("(nill)");
+			p = "(nill)";
 		}
 
 		if (separator == NULL)
 		{
 			printf("%s", p);
 		}
-		else if (separator == 0 && i == 0)
+		else if (separator && i == 0)
 		{
 			printf("%s", p);
 		}
