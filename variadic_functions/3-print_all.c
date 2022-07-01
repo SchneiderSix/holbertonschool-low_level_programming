@@ -10,13 +10,10 @@
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	unsigned int i;
-	char *string, *separator;
-
-	i = 0;
+	unsigned int i = 0;
+	char *string, *separator = "";
 
 	va_start(list, format);
-
 
 	if (format)
 	{
@@ -45,7 +42,6 @@ void print_all(const char * const format, ...)
 			}
 			separator = ", ";
 			i++;
-
 		}
 	}
 	printf("\n");
