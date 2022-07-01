@@ -29,7 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (p == NULL)
 		{
-			p = "(nill)";
+			p = "(nil)";
 		}
 
 		if (separator == NULL)
