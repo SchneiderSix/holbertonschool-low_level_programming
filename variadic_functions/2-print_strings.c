@@ -41,7 +41,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 
 	}
-	printf("%d", va_arg(list, char));
+	printf("%s", p);
 	printf("\n");
 	va_end(list);
 }
