@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
- * sum_them_all - print numbers
+ * print_numbers - print numbers
  * @n: var positive
  * @separator: pointer to string
  * Return: 0
@@ -18,12 +18,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		if (separator == NULL)
+		printf("%d", va_arg(list, int));
+
+		while (i < (n - 1))
 		{
-		}
-		else
-		{
-			printf("%d%s", va_arg(list, int), separator);
+			printf("%s", separator);
 		}
 	}
 	va_end(list);
