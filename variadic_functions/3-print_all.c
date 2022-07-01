@@ -10,11 +10,10 @@
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	unsigned int i = 0;
+	int i = 0;
 	char *string, *separator = "";
 
 	va_start(list, format);
-
 	if (format)
 	{
 		while (format[i])
@@ -32,13 +31,15 @@ void print_all(const char * const format, ...)
 					break;
 				case 's':
 					string = va_arg(list, char *);
-
 					if (string == NULL)
 					{
 						string = "(nil)";
 					}
 					printf("%s%s", separator, string);
 					break;
+				default:
+					i++;
+					continue;
 			}
 			separator = ", ";
 			i++;
