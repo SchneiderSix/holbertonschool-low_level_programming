@@ -25,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		if (separator == NULL)
 		{
-			printf("%s", va_arg(list, char));
+			printf("%d", va_arg(list, char));
 		}
 		else if (va_arg(list, char) == NULL)
 		{
@@ -33,11 +33,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("%s%s", va_arg(list, char), separator);
+			printf("%d%s", va_arg(list, char), separator);
 		}
 
 	}
-	printf("%s", va_arg(list, char));
+	printf("%d", va_arg(list, char));
 	printf("\n");
 	va_end(list);
 }
