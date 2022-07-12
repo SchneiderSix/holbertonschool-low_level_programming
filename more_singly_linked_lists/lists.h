@@ -15,7 +15,7 @@ typedef struct listint_s
 	char *str;
 	unsigned int len;
 	struct listint_s *next;
-} list_t;
+} listint_t;
 
 size_t print_listint(const listint_t *h);
 
