@@ -1,6 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
  * add_nodeint - singly linked list
