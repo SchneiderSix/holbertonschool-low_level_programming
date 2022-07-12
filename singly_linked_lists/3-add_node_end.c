@@ -11,7 +11,7 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *newnode, lastnode;
+	list_t *newnode, *lastnode;
 	int len = 0;
 
 	newnode = malloc(sizeof(list_t));
@@ -33,6 +33,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (*head == NULL)
 	{
 		*head = newnode;
+		return (newnode);
 	}
 	else
 	{
