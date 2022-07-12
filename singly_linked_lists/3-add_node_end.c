@@ -9,7 +9,7 @@
  * Return: new address of element or null
  */
 
-list_t *add_node_end(list_t **head, const char *str)
+list_t *add_node_end(__attribute__((unused)) list_t **head, const char *str)
 {
 	list_t *newnode;
 	int len = 0;
