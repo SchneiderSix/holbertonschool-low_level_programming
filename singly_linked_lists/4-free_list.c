@@ -9,12 +9,13 @@
 
 void free_list(list_t *head)
 {
-	__attribute__((unused)) list_t *tmpnode;
+	list_t *tmpnode;
 
 	while (head)
 	{
 		tmpnode = head->next;
 		free(head->str);
 		free(head);
+		tmpnode = head;
 	}
 }
