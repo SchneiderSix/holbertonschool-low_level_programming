@@ -4,8 +4,9 @@
 
 /**
  * add_node - singly linked list
- * @h: pointer to list_t
- * Return: count of nodes
+ * @head: pointer of pointer of list_t
+ * @str: string
+ * Return: new address of element or null
  */
 
 list_t *add_node(list_t **head, const char *str)
