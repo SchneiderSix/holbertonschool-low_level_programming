@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <stddef.h>
 
+/**
+ * print_listint - singly linked list
+ * @h: pointer to listint_t
+ * Return: count of nodes
+ */
 size_t print_listint(const listint_t *h)
 {
 	size_t nu = 0;
