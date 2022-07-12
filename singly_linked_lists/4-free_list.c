@@ -9,7 +9,7 @@
 
 void free_list(list_t *head)
 {
-	list_t *tmpnode;
+	__attribute__((unused)) list_t *tmpnode;
 
 	while (head)
 	{
