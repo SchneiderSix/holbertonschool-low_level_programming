@@ -28,7 +28,6 @@ list_t *add_node_end(__attribute__((unused)) list_t **head, const char *str)
 
 	newnode->len = len;
 	newnode->str = strdup(str);
-	newnode->next = NULL;
 
 	while (newnode->next != NULL)
 	{
