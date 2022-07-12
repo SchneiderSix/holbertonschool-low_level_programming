@@ -3,7 +3,7 @@
 #include <stddef.h>
 
 /**
- * print_list - singly linked list
+ * list_len - singly linked list
  * @h: pointer to list_t
  * Return: count of nodes
  */
