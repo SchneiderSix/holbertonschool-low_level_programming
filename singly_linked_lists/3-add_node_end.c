@@ -9,9 +9,9 @@
  * Return: new address of element or null
  */
 
-list_t *add_node_end(__attribute__((unused)) list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *newnode;
+	list_t *newnode, lastnode;
 	int len = 0;
 
 	newnode = malloc(sizeof(list_t));
@@ -28,10 +28,21 @@ list_t *add_node_end(__attribute__((unused)) list_t **head, const char *str)
 
 	newnode->len = len;
 	newnode->str = strdup(str);
+	newnode->next = NULL;
 
-	while (newnode->next != NULL)
+	if (*head == NULL)
 	{
-		newnode = newnode->next;
+		*head = newnode;
+	}
+	else
+	{
+		lastnode = *head;
+
+		while (lastnode->next != NULL)
+		{
+			lastnode = newnode->next;
+		}
+		lastnode->next = newnode;
 	}
 	return (newnode);
 }
