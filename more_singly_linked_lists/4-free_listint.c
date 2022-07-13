@@ -1,6 +1,7 @@
 #include "lists.h"
 
-/** free_listint - singly linked list
+/**
+ * free_listint - singly linked list
  * @head: pointer of listint_t
  * Return: count of nodes
  */
