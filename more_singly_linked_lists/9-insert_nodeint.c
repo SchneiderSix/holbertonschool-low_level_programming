@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * sum_listint - singly linked list
+ *insert_nodeint_at_index - singly linked list
  * @head: double pointer of listint_t
  * @idx: index of the node
  * @n: int var
@@ -26,16 +26,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = nn;
 		return (nn);
 	}
-	else
+	while (--idx)
 	{
-		while (--idx)
-		{
-			tmp = tmp->next;
-		}
-		nn->next = tmp->next;
-		tmp->next = nn;
-		return (nn);
+		tmp = tmp->next;
 	}
-	return (NULL);
-
+	nn->next = tmp->next;
+	tmp->next = nn;
+	return (nn);
 }
