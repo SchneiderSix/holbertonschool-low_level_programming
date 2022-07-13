@@ -3,8 +3,7 @@
 /**
  * delete_nodeint_at_index - singly linked list
  * @head: double pointer of listint_t
- * @idx: index of the node
- * @n: int var
+ * @index: index of the node
  * Return: checkout the code
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
