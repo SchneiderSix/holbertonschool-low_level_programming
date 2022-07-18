@@ -7,7 +7,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i;
+	int i, zeros = 0;
 	unsigned long int comp;
 
 	for (i = 63; i >= 0; i--)
@@ -17,8 +17,9 @@ void print_binary(unsigned long int n)
 		if (comp & 1)
 		{
 			_putchar('1');
+			zeros++;
 		}
-		else
+		else if (zeros)
 		{
 			_putchar('0');
 		}
