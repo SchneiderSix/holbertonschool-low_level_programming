@@ -9,11 +9,20 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	int bits;
+	int bits = 0, lbn, lbm;
 
-	int mask = n ^ m;
+	while (n > 0 || m > 0)
+	{
+		lbn = n & 1;
+		lbm = m & 1;
 
-	bits = n ^ mask;
-
+		if (lbn != lbm)
+		{
+			bits++;
+		}
+		n = n >> 1;
+		m = m >> 1;
+	}
 	return (bits);
+
 }
