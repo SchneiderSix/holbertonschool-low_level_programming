@@ -7,18 +7,20 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int mask = 32768;
+	int i;
+	unsigned long int comp;
 
-	while (mask > 0)
+	for (i = 63; i >= 0; i--)
 	{
-		if ((n & mask) == 0 )
-		{
-			_putchar('0');
-		}
-		else
+		comp = n >> i;
+
+		if (comp & 1)
 		{
 			_putchar('1');
 		}
-		mask = mask >> 1;
+		else
+		{
+			_putchar('0');
+		}
 	}
 }
