@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * binary_to_uint - binary to decimal
  * @b: string
@@ -9,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
     int i;
     unsigned int dr = 0;
 
-    if (b == NULL)
+    if (!b)
     {
         return (NULL);
     }
@@ -20,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
         {
             return (0);
         }
-        dr = dr * 2  + (b[i] - '0')
+        dr = dr * 2  + (b[i] - '0');
     }
     return (dr);
 }
