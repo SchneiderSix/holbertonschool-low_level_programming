@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stddef.h>
 /**
- * get_bit - explicit name
+ * set_bit - explicit name
  * @n: pointer to int
  * @index: index
  * Return: value or -1
