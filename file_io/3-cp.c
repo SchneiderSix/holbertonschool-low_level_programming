@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
 		if (fdw != rbuff || write(fdw, buff, rbuff) != rbuff)
 		{
 			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close(fdr);
 			exit(99);
 		}
 	}
