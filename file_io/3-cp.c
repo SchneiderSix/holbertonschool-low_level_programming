@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
 	while (rbuff != -1)
 	{
-		if (fdw != rbuff || write(fdw, buff, rbuff) != rbuff)
+		if (fdw == -1 || write(fdw, buff, rbuff) != rbuff)
 		{
 			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
 			close(fdr);
