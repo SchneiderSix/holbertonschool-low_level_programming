@@ -41,10 +41,14 @@ int main(int argc, char *argv[])
 	cw = close(fdw);
 
 	if (cr == -1)
+	{
 		dprintf(STDOUT_FILENO, "Error: Can't close %d\n", fdr);
 		exit(100);
-	if (cw == -1
+	}
+	if (cw == -1)
+	{
 		dprintf(STDOUT_FILENO, "Error: Can't close %d\n", fdw);
 		exit(100);
+	}
 	return (0);
 }
