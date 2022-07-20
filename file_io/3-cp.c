@@ -22,7 +22,11 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	fdw = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	rbuff = read(fdr, buff, 1024);
+	if (fdw == -1)
+	{
+		dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
+		close(fdr), exit(99);
+	}
 	while (rbuff == 1024)
 	{
 		rbuff = read(fdr, buff, 1024);
