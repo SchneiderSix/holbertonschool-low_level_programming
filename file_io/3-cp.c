@@ -25,14 +25,14 @@ int main(int argc, char *argv[])
 	rbuff = read(fdr, buff, 1024);
 	while (rbuff > 0)
 	{
-		if (fdw > 0 || write(fdw, buff, rbuff) != rbuff)
+		if (fdw < 0 || write(fdw, buff, rbuff) != rbuff)
 		{
 			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
 			close(fdr);
 			exit(99);
 		}
 	}
-	if (rbuff < 0)
+	if (rbuff == -1)
 	{
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
@@ -40,12 +40,12 @@ int main(int argc, char *argv[])
 	cr = close(fdr);
 	cw = close(fdw);
 
-	if (cr < 0)
+	if (cr == -1)
 	{
 		dprintf(STDOUT_FILENO, "Error: Can't close %d\n", fdr);
 		exit(100);
 	}
-	if (cw < 0)
+	if (cw == -1)
 	{
 		dprintf(STDOUT_FILENO, "Error: Can't close %d\n", fdw);
 		exit(100);
