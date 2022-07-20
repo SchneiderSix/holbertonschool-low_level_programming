@@ -11,8 +11,10 @@ int main(int argc, char *argv[])
 	int fdr, fdw, rbuff, cr, cw;
 
 	if (argc != 3)
+	{
 		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
+	}
 	fdr = open(argv[1], O_RDONLY);
 	if (fdr == -1)
 	{
@@ -23,7 +25,7 @@ int main(int argc, char *argv[])
 	rbuff = read(fdr, buff, 1024);
 	while (rbuff > 0)
 	{
-		if (fdw == -1 || write(fdw, buff, rbuff) != rbuff)
+		if (fdw > 0 || write(fdw, buff, rbuff) != rbuff)
 		{
 			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
 			close(fdr);
