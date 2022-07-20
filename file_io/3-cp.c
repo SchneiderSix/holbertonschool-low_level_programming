@@ -1,0 +1,56 @@
+#include "main.h"
+/**
+ * main - copies content of a file to another file
+ * @argc: n of args
+ * @argv: args
+ * Return: 0
+ */
+int main(int argc, int *argv[])
+{
+	char buff[1024];
+	int fdr, fdw, rbuff, cr, cw;
+
+	if (argc != 3)
+	{
+		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+	fdr = open(argv[1], O_RDONLY);
+
+	if (fdr == -1)
+	{
+		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+	fdw = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+
+	rbuff = read(fdr, buff, 1024);
+
+	while (rbuff != -1)
+	{
+		if (fdw != rbuff || write(fdw, buff, rbuff) != rbuff)
+		{
+			dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		}
+	}
+	if (rbuff == -1)
+	{
+		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+	cr = close(fdr);
+	cw = close(fdw);
+
+	if (cr == -1)
+	{
+		dprintf(STDOUT_FILENO, "Error: Can't close %s\n", fdr);
+		exit(100);
+	}
+	if (cw == -1)
+	{
+		dprintf(STDOUT_FILENO, "Error: Can't close %s\n", fdw);
+		exit(100);
+	}
+	return (0);
+}
