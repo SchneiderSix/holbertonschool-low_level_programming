@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	if (rbuff == -1)
+	if (rbuff < 0)
 	{
 		dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
@@ -40,12 +40,12 @@ int main(int argc, char *argv[])
 	cr = close(fdr);
 	cw = close(fdw);
 
-	if (cr == -1)
+	if (cr < 0)
 	{
 		dprintf(STDOUT_FILENO, "Error: Can't close %d\n", fdr);
 		exit(100);
 	}
-	if (cw == -1)
+	if (cw < 0)
 	{
 		dprintf(STDOUT_FILENO, "Error: Can't close %d\n", fdw);
 		exit(100);
