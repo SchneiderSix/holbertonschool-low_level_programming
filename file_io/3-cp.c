@@ -12,8 +12,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
+		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	}
 	fdr = open(argv[1], O_RDONLY);
 	if (fdr == -1)
@@ -32,7 +31,8 @@ int main(int argc, char *argv[])
 		rbuff = read(fdr, buff, 1024);
 		if (rbuff == -1)
 		{
-			dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+			dprintf(STDOUT_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
 		}
 		wbuff = write(fdw, buff, rbuff);
 		if (wbuff < rbuff)
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 	}
 	if (close(fdr) == -1)
 		dprintf(STDOUT_FILENO, "Error: Can't close %d\n", fdr), exit(100);
-			
+
 	if (close(fdw) == -1)
 		dprintf(STDOUT_FILENO, "Error: Can't close %d\n", fdr), exit(100);
 
