@@ -5,7 +5,7 @@
  * @argv: args
  * Return: 0
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	char buff[1024];
 	int fdr, fdw, rbuff, cr, cw;
