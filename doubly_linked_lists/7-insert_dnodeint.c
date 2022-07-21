@@ -2,7 +2,7 @@
 
 /**
  * insert_dnodeint_at_index - explicit name
- * @head: double pointer of dlistint_t
+ * @h: double pointer of dlistint_t
  * @idx: index
  * @n: data
  * Return: nn
