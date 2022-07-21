@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * dlistint_len - prints all elements of list
+ * add_dlistint - adds node at the beginning
  * @head: double pointer of dlistint_t
  * @n: int
  * Return: address of node
@@ -18,7 +18,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	}
 	nn->n = n;
 	nn->next = *head;
-	*head = nn;
+	nn->prev = NULL;
 
 	return (nn);
 }
