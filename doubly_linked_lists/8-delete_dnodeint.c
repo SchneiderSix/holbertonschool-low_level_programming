@@ -29,15 +29,15 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		i++;
 		tmp = tmp->next;
 	}
-	if (i == ix && tmp)
+	if (tmp && i == ix)
 	{
 		dn = tmp->next;
 		if (dn->next)
 		{
 			dn->next->prev = tmp;
+		}
 			tmp->next = dn->next;
 			free(dn);
-		}
 		return (1);
 	}
 
