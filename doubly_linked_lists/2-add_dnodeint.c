@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dlistint - adds node at the beginning
+ * add_dnodeint - adds node at the beginning
  * @head: double pointer of dlistint_t
  * @n: int
  * Return: address of node
