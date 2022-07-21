@@ -1,15 +1,4 @@
 #include "lists.h"
-size_t dlistint_len(const dlistint_t *h)
-{
-	size_t nu = 0;
-
-	while (h)
-	{
-		h = h->next;
-		nu++;
-	}
-	return (nu);
-}
 
 /**
  * delete_dnodeint_at_index - explicit name
@@ -20,6 +9,7 @@ size_t dlistint_len(const dlistint_t *h)
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *tmp = *head, *dn;
+	unsigned int i = 0;
 
 	if (!*head || head)
 	{
@@ -40,14 +30,16 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	while (tmp->next != NULL)
 	{
-		if (dlistint_len(tmp) == index)
+		if (i == index)
 		{
 			dn = tmp;
 			tmp->next->prev = tmp->prev;
 			tmp->prev->next = tmp->next;
-		}	
+		}
+		tmp = tmp->next;
+		i++;
 	}
-	if (index > dlistint_len(tmp))
+	if (index > i)
 	{
 		return (-1);
 	}
