@@ -1,4 +1,4 @@
-#include "hash_table_set"
+#include "hash_tables_h"
 /**
 * key_index - map index to key
 * @key: key to be indexed
