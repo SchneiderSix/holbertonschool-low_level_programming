@@ -1,13 +1,18 @@
-#include "hash_table_set"
-/**
-* key_index - map index to key
-* @key: key to be indexed
-* @size: size of ht
-* Return: n of op
-*/
-unsigned long int key_index(const unsigned char *key, unsigned long int size)
+#include "hash_tables.h"
+
+
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int n;
-	n = hash_djb2(key) % size;
-	return (n);
+	unsigned long int index;
+	hash_node_t *tmp, *nn;
+
+
+	if (!key || !value || !ht)
+		return (0);
+	nn = malloc(sizeof(hash_node_t));
+	if (!nd)
+		return (0);
+	nn->key = key;
+	nn->value = strdup(value);
+	
 }
