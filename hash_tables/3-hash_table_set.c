@@ -16,6 +16,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!nn || !key || !value || !ht)
 	{
 		free(nn);
+		free(key);
+		free(value);
 		return (0);
 	}
 	index = key_index((const unsigned char *)key, ht->size);
