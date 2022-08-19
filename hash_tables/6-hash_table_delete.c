@@ -2,6 +2,7 @@
 
 /**
 * hash_table_delete - explicit name
+* @ht: hash table
 * Return: nothing
 */
 void hash_table_delete(hash_table_t *ht)
@@ -17,6 +18,7 @@ void hash_table_delete(hash_table_t *ht)
 			ht->array[i] = ht->array[i]->next;
 		}
 	}
+	ht->size = 0;
 	free(ht->array);
 	free(ht);
 }
