@@ -11,6 +11,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned long int index;
 
 	index = key_index((const unsigned char *)key, ht->size);
+	if (!ht)
+	{
+		return (key);
+	}
 	if (ht->array[index]->key)
 	{
 		return (ht->array[index]->value);
