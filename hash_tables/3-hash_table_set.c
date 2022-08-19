@@ -1,6 +1,12 @@
 #include "hash_tables.h"
 
-
+/**
+* hash_table_set - set key and value into array
+* @ht: hash table struc
+* @key: key to be placed or update the value
+* @value: value
+* Return: 0 if fail, 1 if succeed
+*/
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
