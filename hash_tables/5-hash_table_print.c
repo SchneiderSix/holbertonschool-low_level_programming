@@ -18,7 +18,7 @@ void hash_table_print(const hash_table_t *ht)
 		while (ht->array[i])
 		{
 			if (coma == 1)
-				printf(",");
+				printf(", ");
 			printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
 			coma = 1;
 			ht->array[i] = ht->array[i]->next;
