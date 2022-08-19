@@ -1,5 +1,11 @@
 #include "hash_tables.h"
 
+/**
+* hash_table_get - get value of key
+* @ht: hash table
+* @key: key
+* Return: value
+*/
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int index;
@@ -11,6 +17,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	}
 	else
 	{
-		return (printf("%s:"(null)"\n", ht->array[index]->key));
+		return (ht->array[index]->key);
 	}
 }
