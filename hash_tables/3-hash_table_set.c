@@ -21,17 +21,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	else
 	{
-		/* if place is empty */
-		if (ht->array[index]->value == 0)
-		{
-			nn->next = ht->array[index];
-			ht->array[index] = nn;
-		}
-		else
+		/* update value of key */
+		if (ht->array[index]->key == key)
 		{
 			free(ht->array[index]->value);
 			ht->array[index]->value = strdup((char *)value);
 			free(nn->key), free(nn);
+		}
+		else
+		{
+			nn->next = ht->array[index];
+			ht->array[index] = nn;
 		}
 	}
 	return (1);
