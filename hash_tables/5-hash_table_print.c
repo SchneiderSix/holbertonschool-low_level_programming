@@ -11,11 +11,11 @@ void hash_table_print(const hash_table_t *ht)
 
 	if (!ht)
 		return;
-	for (i = 0; ht->size != '\0'; i++)
+	for (i = 0; ht->size; i++)
 	{
-		while(ht->array[i])
+		while (ht->array[i])
 		{
-			printf("'%s' : '%s'\n", ht->array[i]->key, ht->array[i]->value);
+			printf("'%s' : '%s'", ht->array[i]->key, ht->array[i]->value);
 			ht->array[i] = ht->array[i]->next;
 		}
 	}
