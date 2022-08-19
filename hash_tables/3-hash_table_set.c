@@ -28,11 +28,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		/* update value of key */
-		if (ht->array[index]->key == strdup((char *)key))
+		if (ht->array[index]->key == key)
 		{
+			free(nn);
 			free(ht->array[index]->value);
 			ht->array[index]->value = strdup((char *)value);
-			free(nn->key), free(nn);
 		}
 		else
 		{
