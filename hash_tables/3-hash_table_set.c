@@ -11,17 +11,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
 	hash_node_t *nn = NULL;
-	char *kkey = strdup(key), *vvalue = strdup(value);
 
 	nn = malloc(sizeof(hash_node_t));
-	if (!nn || !key || !value || !ht || !kkey || !vvalue)
+	if (!nn || !key || !value || !ht)
 	{
-		free(nn), free(kkey), free(vvalue);
+		free(nn);
 		return (0);
 	}
 	index = key_index((const unsigned char *)key, ht->size);
-	nn->key = kkey;
-	nn->value = vvalue;
+	nn->key = strdup((char *)key);
+	nn->value = strdup((char *)value);
 	if (!nn->key || !nn->value)
 		free(nn->key), free(nn->value);
 
