@@ -8,14 +8,14 @@
 */
 int binary_search(int *array, size_t size, int value)
 {
-	unsigned int l, mid, h = size - 1, i;
+	unsigned int l = 0, mid = 0, h = size - 1, i = 0;
 
 	if (!array)
 		return (-1);
 	
 	while (l <= h)
 	{
-		mid = l + (h - l) / 2;
+		mid = (h + l) / 2;
 		printf("Searching in array: ");
 			for (i = l; i <= h; i++)
 			{   
