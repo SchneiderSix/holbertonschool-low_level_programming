@@ -13,14 +13,15 @@ int binary_search(int *array, size_t size, int value)
 
 	if (!array)
 		return (-1);
-	
+
 	while (l <= h)
 	{
+		i = l;
 		mid = (h + l) / 2;
 		printf("Searching in array: ");
-			for (i = l; i <= h; i++)
-			{   
-					if(i != l)
+			for (; i <= h; i++)
+			{
+					if (i != l)
 						printf(", ");
 					printf("%d", array[i]);
 			}
