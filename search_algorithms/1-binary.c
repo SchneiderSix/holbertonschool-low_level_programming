@@ -1,6 +1,7 @@
 #include "search_algos.h"
 
-/** binary_search - search in array spliting in two
+/**
+* binary_search - search in array spliting in two
 * @array: array
 * @size: size of array
 * @value: value to be searched
